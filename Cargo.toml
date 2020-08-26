@@ -1,7 +1,7 @@
 [package]
 authors = [
-  "Jorge Aparicio <jorge@japaric.io>",
-  "Per Lindgren <per.lindgren@ltu.se>",
+    "Jorge Aparicio <jorge@japaric.io>",
+    "Per Lindgren <per.lindgren@ltu.se>",
 ]
 categories = [
     "data-structures",
@@ -27,6 +27,7 @@ ufmt-impl = ["ufmt-write"]
 x86-sync-pool = []
 # only for tests
 __trybuild = []
+defmt_format = ["defmt"]
 
 [target.x86_64-unknown-linux-gnu.dev-dependencies]
 scoped_threadpool = "0.1.8"
@@ -51,3 +52,8 @@ optional = true
 
 [dev-dependencies.ufmt]
 version = "0.1"
+
+[dependencies.defmt]
+git = "https://github.com/knurling-rs/defmt"
+branch = "main"
+optional = true
