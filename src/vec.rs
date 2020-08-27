@@ -823,8 +823,6 @@ where
     }
 }
 
-
-
 #[cfg(test)]
 mod tests {
     use crate::{consts::*, Vec};
@@ -1153,6 +1151,4 @@ mod tests {
         assert!(!v.ends_with(b"ba"));
         assert!(!v.ends_with(b"a"));
     }
-
-
 }

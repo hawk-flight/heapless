@@ -106,10 +106,10 @@ pub mod mpmc;
 pub mod pool;
 #[cfg(has_atomics)]
 pub mod spsc;
-#[cfg(feature="defmt-impl")]
+#[cfg(feature = "defmt-impl")]
 pub mod defmt;
 
-#[cfg(feature="ufmt-impl")]
+#[cfg(feature = "ufmt-impl")]
 mod ufmt;
 
 mod sealed;
