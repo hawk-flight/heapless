@@ -106,6 +106,8 @@ pub mod mpmc;
 pub mod pool;
 #[cfg(has_atomics)]
 pub mod spsc;
+#[cfg(feature = "defmt-impl")]
+mod defmt;
 
 #[cfg(feature = "ufmt-impl")]
 mod ufmt;
