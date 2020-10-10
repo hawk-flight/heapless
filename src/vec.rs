@@ -1,3 +1,5 @@
+//! A fixed capacity [`Vec`](https://doc.rust-lang.org/std/vec/struct.Vec.html)
+
 use core::{fmt, hash, iter::FromIterator, mem::MaybeUninit, ops, ptr, slice};
 
 use generic_array::{ArrayLength, GenericArray};

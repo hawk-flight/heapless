@@ -82,7 +82,7 @@ pub use indexmap::{Bucket, FnvIndexMap, IndexMap, Pos};
 pub use indexset::{FnvIndexSet, IndexSet};
 pub use linear_map::LinearMap;
 pub use string::String;
-pub use vec::Vec;
+pub use vec::{Vec, IntoIter};
 pub use histbuf::HistoryBuffer;
 
 // NOTE this code was last ported from v0.4.1 of the indexmap crate
@@ -90,7 +90,7 @@ mod indexmap;
 mod indexset;
 mod linear_map;
 mod string;
-mod vec;
+pub mod vec;
 mod histbuf;
 
 #[cfg(feature = "serde")]
